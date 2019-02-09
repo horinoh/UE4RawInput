@@ -13,7 +13,7 @@
 ~~~
 
 ## ベンダーID、プロダクトID の調査 (Investigate VenderID, ProductID)
-* Windowsボタン - Windowsシステムツール　- コントロールパネル - デバイスマネージャー - デバイスをダブルクリック (Windows key - Windows system tool - Control panel - Device manager - Double click device)
+* Windowsボタン - Windowsシステムツール　- コントロールパネル - デバイスマネージャー - ヒューマンインタフェースデバイス - デバイスをダブルクリック (Windows key - Windows system tool - Control panel - Device manager - Human interface device - Double click device)
     * 詳細 - プロパティ - ハードウェアIDを選択する (Detail - Property - Select HardwareID)
     * VID_XXXX&PID_YYYY の場合 (In case of VID_XXXX&PID_YYYY)
         * XXXX がベンダーID、YYYY がプロダクトID (XXXX is VenderID, YYYY is ProductID)
@@ -37,35 +37,36 @@ g920
 
 ### t500rs
 ~~~
-Button1     ShiftDown
-Button2     ShigtUp
-Button3     Triangle
-Button4     Square
-Button5     Circle
+Button1     PaddleShiftL
+Button2     PaddleShiftR
+Button3     Axis3 //Not work as Triangle
+Button4     Axis4 //Not work as Square
+Button5     HatSwitch(Up) //Not Circle
 Button6     Cross
 Button7     Select
 Button8     Start
 Button9     R2
 Button10    L2
-Button11    L3    
+Button11    //Not work as L3
 Button12    R3
 Button13    PS
 
-HatSwitch   CrossKey
-
-Axis        Steer
-Slider0     Cluch
-Y Axis      Brake
-RZ Axis     Gas
+Axis1       Steering    Offset=-0.5
+Axis2       Brake       Offset= 1.0, Inverted
+Axis3       Gas         Offset= 1.0, Inverted
+Axis4       Cluch       Offset= 1.0, Inverted
+Axis5       HatSwitch
+    Up=0, UpRight=X, Right=2X, DownRight=3X, Down=4X, DownLeft=5X, Left=6X, UpLeft=7X, Nutral=2+X
+    (1.0/7.0 = 0.142857 as X)
 ~~~
 
 ### th8a
 ~~~
 Button1     Gear1
 Button2     Gear2
-Button3     Gear3
-Button4     Gear4
-Button5     Gear5
+Button3     //Not work as Gear3
+Button4     //Not work as Gear4
+Button5     //Not work as Gear5
 Button6     Gear6
 Button7     Gear7
 Button8     GearR
@@ -75,23 +76,24 @@ Button8     GearR
 ~~~
 Button1     R1
 Button2     L1
-Button3     R3
-Button4     L3
-Button5     Square
+Button3     //Not work as R3
+Button4     //Not work as L3
+Button5     //Not work as Square
 Button6     Cross
 Button7     Circle
 Button8     Trianle
 Button9     R2
 Button10    L2
-Button11    Share
+Button11    //Not work as Share
 Button12    Option
 
-HatSwitch   CrossKey
+HatSwitch   //Not work
 
-Z Axis      Throttle
-RZ Axis     Ladder
-X Axis      ControlStick
-Y Axis      ControlStick
+Axis1       ControlStickY   Offset=0.5, Inverted
+Axis2       ControlSitckX   Offset=-0.5
+Axis3       Ladder          Offset=-0.5
+Axis7       Ladder(Twist)   Offset=-0.5
+Axis8       Throttle        Offset=0.5, Inverted
 ~~~
 
 <!--

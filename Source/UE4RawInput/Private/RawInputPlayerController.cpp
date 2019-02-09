@@ -36,6 +36,6 @@ void ARawInputPlayerController::GeneUSBButton(int No)
 	FVector WorldLoc, WorldDir;
 	if(DeprojectScreenPositionToWorld(0, Base + No * Offset, WorldLoc, WorldDir))
 	{
-		DrawDebugString(InputComponent->GetWorld(), WorldLoc, FString::Printf(TEXT("Button%02d"), No), nullptr, FColor::White, 0.0f);
+		DrawDebugString(InputComponent->GetWorld(), WorldLoc, FString::Printf(TEXT("Button%02d"), No), nullptr, FColor::White, 1.0f);
 	}
 }
