@@ -35,7 +35,7 @@ g920
 ## キーアサインの調査 (Investigate key assign)
 * Windowsボタン - Windowsシステムツール　- コントロールパネル - デバイスとプリンター - デバイスを右クリック - ゲームコントローラの設定 - プロパティ(Windows key - Windows system tool - Control panel - Device and printer - Right click device - Game controller settings - Prooerty)
 
-### t500rs
+### t500rs (0x044F, 0xB65E)
 ~~~
 Button1     PaddleShiftL
 Button2     PaddleShiftR
@@ -60,7 +60,7 @@ Axis5       HatSwitch
     (1.0/7.0 = 0.142857 as X)
 ~~~
 
-### th8a
+### th8a (0x044F, 0xB660)
 ~~~
 Button1     Gear1
 Button2     Gear2
@@ -72,7 +72,7 @@ Button7     Gear7
 Button8     GearR
 ~~~
 
-### hotas4
+### hotas4 (0x044F, 0xB67C)
 ~~~
 Button1     R1
 Button2     L1
